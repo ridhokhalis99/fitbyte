@@ -11,6 +11,10 @@ spring:
       ddl-auto: none
   flyway:
     enabled: true
+  security:
+    jwt:
+      secret: ${JWT_SECRET}
+      expirySeconds: ${JWT_EXP}
 
 management:
   endpoints:
